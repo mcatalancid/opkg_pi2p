@@ -1,0 +1,11 @@
+prefix=/home/miguel/workspace/wng_software/opkg/out_MOXA-UC8481
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libopkg
+Description: opkg package manager library
+Version: 0.1.8
+Libs: -L${libdir} -lopkg
+Cflags: -I${includedir}/libopkg
+
